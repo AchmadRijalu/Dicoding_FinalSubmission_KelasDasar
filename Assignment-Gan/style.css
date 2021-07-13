@@ -7,6 +7,10 @@
 }
 body{
     background-color: #0A1931;
+    /* margin: 0;
+    padding: 0; */
+    margin: 0;
+    padding: 0;
 }
 header{
 background-image: none;
@@ -39,7 +43,10 @@ position: fixed;
     width: 800px;
     
 }
-
+a:visited{
+    text-decoration: none;
+    color: whitesmoke;
+}
 .Banner img:hover{
     box-shadow: 2px 2px 7px whitesmoke;
 }
@@ -85,6 +92,7 @@ background-color:rgba(0, 0, 0, 0.336);
 margin-right: 20px;
 border: 2px solid black;
 border-radius: 40px;
+
 }
 aside h1{
     text-align: center;
@@ -93,12 +101,21 @@ aside h1{
     color: whitesmoke;
     font-weight: bolder;
 }
+.photo{
+    width: 80%;
+    min-height: 100px;
+    /* background-color: aqua; */
+    margin: 0;
+    text-align: right;
+}
 .photo img{
     width: 200px;
     /* background-color: aliceblue; */
-    float: left;
-    margin: 5px 5px 5px 40px;
-    padding: 5px 5px 5px 5px;
+    
+    /* margin: 5px 5px 5px 40px;
+    padding: 5px 5px 5px 5px; */
+    
+    
 
 }
 aside .aside-info{
@@ -114,7 +131,7 @@ aside .aside-info{
     border: 2px solid white;
     padding: 10px 10px 10px 10px;
     box-shadow: 2px 2px 4px whitesmoke;
-
+    
 }
 .data  h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -129,10 +146,67 @@ border-radius: 40px;
     text-align: center;
     color: whitesmoke;
 }
+.hidden-aside{
+    width: 100%;
+min-height: 300px;
+background-color:rgba(0, 0, 0, 0.336);
+margin-right: 20px;
+border: 2px solid black;
+border-radius: 40px;
+float: left;
+margin:20px 20px 20px 20px;
+display: none;
+}
+.hidden-1{
+   display: block;
+    width: 100%;
+    min-height: 70px;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: none;
+
+}
+.hidden-photo{
+    width: 80%;
+min-height: 100px;
+display: none;
+
+text-align: center;
+margin-bottom: 30px;
+}
+.hidden-photo img{
+    width: 200px;
+    display: none;
+}
+.hidden-info{
+    width: 50%;
+min-height: 200px;
+padding: 10px 10px 30px 10px;
+margin-bottom: 40px;
+margin-top: 40px;
+background-color:rgba(0, 0, 0, 0.253);
+box-shadow: 2px 2px 7px whitesmoke;
+display: none;
+
+}
+.data-hidden{
+    text-align: center;
+color: whitesmoke;
+border: 2px solid white;
+padding: 10px 10px 10px 10px;
+box-shadow: 2px 2px 4px whitesmoke;
+display: none;
+}
+
 .calendar{
     
     float: left;
     margin: 30px 80px 20px 70px;
+}
+.calendar img{
+    width : 200px;
 }
 article h1{
     margin: 20px 20px 20px 20px;
@@ -140,10 +214,13 @@ article h1{
     font-size: 45px;
 }
 .about{
+    
     width: 100%;
     min-height: 300px;
     background-color: #1859db23;
     color: whitesmoke;
+    padding: 20px 20px 20px 20px;
+    
 }
 .about h1{
     font-weight: bold;
@@ -151,7 +228,7 @@ article h1{
     padding-bottom: 15px;
     border-bottom-style: solid;
     border-bottom-width: 3.1px;
-    width: fit-content;
+    
     text-align: center;
     padding: 20px;
     margin-bottom: 20px;
@@ -189,6 +266,10 @@ footer p{
     width: 50%;
     
 }
+
+.clear{
+    clear: none;
+}
 .radio input{
     margin-right: 5px;
 }
@@ -198,6 +279,13 @@ footer p{
     
         margin: 110px 50px 50px 17%;
     }
+    .radio{
+        margin-left: 30px;
+    }
+    .calendar{
+        margin-left: 130px;
+    }
+
 }
 
 @media screen and (max-width: 1134px){
@@ -206,6 +294,19 @@ footer p{
         margin: 110px 50px 50px 14%;
     }
 }
+@media screen and (max-width: 1079px){
+    .Banner{
+    
+        margin: 110px 50px 50px 17%;
+    }
+    .radio{
+        margin-left: 30px;
+    }
+    .calendar{
+        margin-left: 100px;
+    }
+}
+
 @media screen and (max-width: 1018px){
     .con{
         margin-left: 9px;
@@ -215,13 +316,24 @@ footer p{
         margin: 110px 50px 50px 9%;
     }
 }
-@media screen and (max-width: 976px){
-    .con{
-        margin-left: 14px;
+@media screen and (max-width: 1018px){
+    .calendar{
+        margin-left: 70px;
     }
-    .Banner{
-    
-        margin: 110px 50px 50px 5%;
+}
+@media screen and (max-width: 976px){
+    .calendar{
+        margin-left: 245px;
+        
+    }
+    .calendar img{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 920px){
+
+    .calendar{
+        margin-left: 189px;
     }
 }
 
@@ -232,6 +344,9 @@ footer p{
     .Banner{
     
         margin: 110px 50px 50px 4%;
+    }
+    .calendar{
+        margin-left: 163px;
     }
 }
 @media screen and (max-width: 856px){
@@ -245,6 +360,9 @@ footer p{
     .Banner img{
         width: 730px;
         margin-top: 35px;
+    }
+    .calendar{
+        margin-left: 160px;
     }
 }
 
@@ -260,4 +378,188 @@ footer p{
         width: 715px;
         margin-top: 35px;
     }
+    aside{
+        display: none;
+    }
+
+    article{
+        /* float: right; */
+        width: fit-content;
+        
+        
+    }
+    .radio{
+        margin-left: 30px;
+    }
+    .calendar{
+        margin-left: 90px;
+    }
+    .calendar img{
+        width: 600px;
+    }
+    .hidden-aside{
+      display: block;
+    }
+    .hidden-1{
+       display: block;
+        
+    
+    }
+    .hidden-photo{
+        display: block;
+    }
+    .hidden-photo img{
+        display: block;
+    }
+    .hidden-info{
+        display: block;
+    
+    }
+    .data-hidden{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 755px){
+    .con{
+        margin-right: 50px;
+    }
+    .Banner{
+    
+        margin: 110px 50px 50px 45px;
+    }
+    .Banner img{
+        width: 715px;
+        margin-top: 35px;
+    }
+}
+@media screen and (max-width: 750px){
+    .con{
+        width: fit-content;
+    }
+    .Banner{
+    
+        margin: 110px 50px 50px 45px;
+    }
+    .Banner img{
+        width: 650px;
+        margin-top: 35px;
+        margin-left: 1px;
+    }
+    article{
+        width: fit-content;
+    }
+    
+}
+@media screen and (max-width: 737px){
+    .con{
+        width: fit-content;
+    }
+    .Banner{
+    
+        margin: 110px 50px 50px 45px;
+    }
+    .Banner img{
+        width: 650px;
+        margin-top: 35px;
+        margin-left: 1px;
+    }
+    article{
+        width: fit-content;
+        margin-left: 18px;
+    }
+    .calendar img {
+        width: 555px;
+    }
+    .about h1{
+        font-size: 40px;
+    }
+     
+    
+}
+@media screen and (max-width: 705px){
+    .about h1{
+        font-size: 55px;
+    }
+    .about p{
+        margin: 50px;
+    }
+    .about{
+        margin-left: 50px;
+    }
+    .clear{
+        clear: both;
+    }
+    .v2{
+        margin-left: 235px;
+    }
+    .hidden-aside{
+        margin-left: 60px;
+    }
+}
+@media screen and (max-width: 573px){
+.v2{
+    margin-left: 190px;
+}
+.about{
+    margin-left: 100px;
+}
+footer{
+    width: fit-content;
+}
+footer ul{
+    display: none;
+}
+.hidden-aside{
+    margin-left: 90px;
+}
+}
+@media screen and (max-width: 479px){
+
+    .v2{
+        margin-left: 140px;
+    }
+    .about{
+        margin-left: 160px;
+    }
+    .hidden-aside{
+    padding: 30px;
+    width: max-content;
+    margin-left: 60px;
+    }
+    .hidden-1{
+        font-size: 34px;
+    }
+
+}
+@media screen and (max-width: 400px){
+    .v2{
+        margin-left: 110px;
+    }
+    .about{
+        margin-left: 140px;
+    }
+    .v2 img{
+        width: 150px;
+    }
+    .about p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 382px){
+.about{
+    width: fit-content;
+    margin-left: 80px;
+}
+.v2{
+    width: 500px;
+    margin-left: 10px;
+    text-align: center;
+}
+.v2 img{
+    width: 200px;
+    
+}
+
 }
