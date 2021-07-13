@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: 'fira sans';
+}
+body{
+    background-color: #0A1931;
+}
+header{
+background-image: none;
+width: 100%;
+min-height: 100px;
+background-color:rgba(0, 0, 0, 0.336);
+border: 2px solid black;
+border-radius: 15px;
+position: fixed;
+}
+
+.con{
+    /* float: left; */
+    width: 100%;
+    min-height: 600px;
+    background-color: rgba(0, 0, 0, 0.336);
+    float: left;
+}
+.Banner{
+    width: 50%;
+    height: 300px;
+    /* background-color: black; */
+    margin: unset;
+   /* float: left; */
+   text-align: center;
+   margin: 110px 50px 50px 21%;
+    
+}
+.Banner img{
+    width: 800px;
+    
+}
+
+.Banner img:hover{
+    box-shadow: 2px 2px 7px whitesmoke;
+}
+.logo{
+   float: left;
+   margin: 5px 5px 5px 25px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+}
+nav ul{
+
+    margin: 35px 30px 30px 35%;
+}
+nav li{
+    color: whitesmoke;
+    display: inline;
+    padding: 10px 10px 10px 10px;
+    /* padding: 10px 10px 10px 10px; */
+    font-size: 23px;
+    
+}
+nav li:hover{
+    color: whitesmoke;
+    text-shadow: 2px 3px 9px yellow;
+}
+article{
+    width: 76%;
+    min-height: 300px;
+    margin-top: 10px;
+    background-color: whitesmoke;
+    
+    float: left;
+}
+h1{
+    font-weight: bold;
+}
+aside{
+    float: right;
+    width: 20%;
+min-height: 300px;
+background-color:rgba(0, 0, 0, 0.336);
+margin-right: 20px;
+border: 2px solid black;
+border-radius: 40px;
+}
+aside h1{
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 30px;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+.photo img{
+    width: 200px;
+    /* background-color: aliceblue; */
+    float: left;
+    margin: 5px 5px 5px 40px;
+    padding: 5px 5px 5px 5px;
+
+}
+aside .aside-info{
+    width: 50%;
+    min-height: 200px;
+    
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.data{
+    text-align: center;
+    color: whitesmoke;
+    border: 2px solid white;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 4px whitesmoke;
+
+}
+.data  h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 20px;
+background-color:whitesmoke;
+color:#0A1931;
+border-radius: 40px;
+
+
+}
+.ig, .fb{
+    text-align: center;
+    color: whitesmoke;
+}
+.calendar{
+    
+    float: left;
+    margin: 30px 80px 20px 70px;
+}
+article h1{
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+    font-size: 45px;
+}
+.about{
+    width: 100%;
+    min-height: 300px;
+    background-color: #1859db23;
+    color: whitesmoke;
+}
+.about h1{
+    font-weight: bold;
+    color: whitesmoke;
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.v2{
+    margin: 10px 30px 10px 80px;
+    float: left;
+    background-color:whitesmoke;
+    box-shadow: 2px 2px 7px yellow;
+}
+.v2:hover{
+    background-color:#0A1931;
+    box-shadow: 2px 2px 7px whitesmoke;
+}
+footer{
+    width: 100%;
+    min-height: 70px;
+    background-color: #0A1931;
+    text-align: center;
+    margin: auto;
+}
+footer li{
+    display: inline;
+    margin: 100px 10px 10px 10px;
+}
+footer p{
+    float: right;
+    color: whitesmoke;
+    margin-right: 30px;
+}
+.radio{
+    float: left;
+    margin-top: 115px;
+    text-align: right;
+    width: 50%;
+    
+}
+.radio input{
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 1256px){
+    .Banner{
+    
+        margin: 110px 50px 50px 17%;
+    }
+}
+
+@media screen and (max-width: 1134px){
+    .Banner{
+    
+        margin: 110px 50px 50px 14%;
+    }
+}
+@media screen and (max-width: 1018px){
+    .con{
+        margin-left: 9px;
+    }
+    .Banner{
+    
+        margin: 110px 50px 50px 9%;
+    }
+}
+@media screen and (max-width: 976px){
+    .con{
+        margin-left: 14px;
+    }
+    .Banner{
+    
+        margin: 110px 50px 50px 5%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .con{
+        margin-left: 20px;
+    }
+    .Banner{
+    
+        margin: 110px 50px 50px 4%;
+    }
+}
+@media screen and (max-width: 856px){
+    .con{
+        margin-left: 27px;
+    }
+    .Banner{
+    
+        margin: 110px 50px 50px 45px;
+    }
+    .Banner img{
+        width: 730px;
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 816px){
+    .con{
+        margin-left: 20px;
+    }
+    .Banner{
+    
+        margin: 110px 50px 50px 45px;
+    }
+    .Banner img{
+        width: 715px;
+        margin-top: 35px;
+    }
+}

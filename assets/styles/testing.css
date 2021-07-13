@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+body{
+    /* background-color: black; */
+    font-family: 'Poppins';
+}
+
+span{
+    color: red;
+}
+
+.red{
+    color: red;
+}
+.skyblue{
+    background-color: skyblue;
+}
+.fancy{
+    font-weight: bold;
+    text-shadow: 4px 4px 3px #77f;
+}
+p.fancy{
+    text-shadow: 4px 4px 3px #00c8eb;
+}
+/* Rule akan diterapkan pada elemen paragraf yang ebrada tepat sebelah image*/
+img + p{
+    color: green;
+
+}
+/*Rule akan diterapkan pada semua elemen sesuah img*/
+img ~ p{
+    color: green;
+}
+
+/*Rule akan diterapkan pada elemen dalam div namun harus peranakan langsung*/
+div > p{
+    background-color: yellow;
+}
+
+/*Rule akan diterapkan pada elemen dalam div, tidak peduli peranakan langsung atau tidak*/
+div p{
+    background-color: #77f;
+}
+h2{
+    color: brown;
+    font-style: initial;
+    font-weight: bold;
+}
+
+
+/*PSEUDO SELECTER SECTION*/
+
+
+/* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+a:visited {
+    color: green;
+ }
+  
+ /* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+ a:hover {
+    color: pink;
+ }
+  
+ /* rule akan diterapkan pada sebuah tautan ketika ditekan */
+ a:active {
+    color:orange;
+ }
+
+ .par::first-letter{
+     font-size: 32px;
+     font-weight: bold;
+     color: saddlebrown;
+ }
+ .but:hover{
+     background-color: blue;
+ }
+ .but{
+     background-color: red;
+ }
+
+ p.shadow{
+     font-size:40px;
+     color: whitesmoke;
+     text-shadow: 4px 3px 3px red;
+ }
+
+ /*OVERFLOW SECTION*/
+div.kotak{
+    width: 20%;
+    /* min-height: 245px; */
+    height: 245px;
+    background-color: aqua;
+    margin-left: 600px;
+    margin-bottom: 50px;
+    overflow:scroll;
+    
+}
+.kotak p{
+    color: red;
+    background-color:unset;
+}
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 100px;
+    box-shadow: inset 1px 1px 5px grey;
+}
+::-webkit-scrollbar-thumb{
+background-color: red;
+border-radius: 100px;
+}
+
+.box-shadow{
+    width: 300px;
+    min-height: 300px;
+    background-color: green;
+    box-shadow: 6px 6px 5px 10px #ffff;
+    margin-bottom: 50px;
+}
+.rounded{
+    border-radius: 10px;
+}
+.nav-ex{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    float: right;
+    list-style-type: none;
+    margin: auto;
+}
+.kotak-nav{
+    width: 100%;
+    min-height: 100px;
+    background: red;
+    margin-bottom: 50px;
+}
+.nav-ex li{
+margin: 40px 25px;
+
+}
+.test{
+     
+    width: 300px;
+    min-height: 300px;
+    background:chartreuse; 
+}
+.test2{
+    width: 200px;
+    min-height: 200px;
+    background-color:white;
+    position: relative;
+    
+}
+.floating{
+    width: 200px;
+    min-height: 200px;
+    float: left;
+}
+.floating p{
+    color: aliceblue;
+}
+.floating-v2{
+    width: 800px;
+    
+    border: 4px solid black;
+    background-color: aliceblue;
+    overflow: auto;
+    
+}
+.floating-v2 img{
+    float: left;
+    margin: 10px;
+}
+.floating-v2 p{
+    background-color: unset;
+}
+.bersih{
+    clear: both;
+}
+
+
+ 

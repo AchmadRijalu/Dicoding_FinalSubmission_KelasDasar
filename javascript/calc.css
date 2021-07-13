@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    font-family: sans-serif;
+}
+
+.button{
+    background-color:azure;
+    border: 1px solid black;
+    padding: 40px;
+    flex-basis: 25%;
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+}
+.double{
+    flex-basis: 50%;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+    
+}
+.flex-column h1{
+    color:black;
+}
+.flex-row{
+ display: flex;
+ background-color: grey;
+}
+.display{
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid black;
+    font-size: 2em;
+}
+.equals , .operator, .negative{
+    background: orange;
+}
+.card{
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+}
+.button:hover{
+    font-weight: bold;
+}
+.historycard{
+width: 80%;
+margin: 30px auto 0 auto;
+overflow: scroll;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid black;
+}
+th,td{
+    padding: 16px;
+    text-align: center;
+}
+th{
+    background-color: orange;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: #d2d2d2;
+}
+@media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+    .historycard{
+        width: 100%;
+    }
+ }
+ @media screen and (max-width: 445px) {
+    .button {
+        padding: 5px;
+    }
+ }
